@@ -184,18 +184,18 @@ bool Sudoku::Solve(){
         if(break_state==0)
         {
             solve_state++;
-        }
-        break_state==0;
-        if(solve_state>1) break;
-        else
-        {
+            if(solve_state>1) break;
+            else
+            {
             for(int i=0;i<12;i++)
-        {
+            {
             for(int j=0;j<12;j++)
             {
                 anwser_board[i][j]=pseudo_board[i][j];
             }
-        }
+            }
+            }
+        break_state==0;
         }
         array_desided[unsolve_number-1]++;
         loc=0;
